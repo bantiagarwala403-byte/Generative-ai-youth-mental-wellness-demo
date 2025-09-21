@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahāy - An Ally for Your Unspoken Thoughts</title>
+
+    <!-- App Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%239381FF'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='60' font-family='Poppins, sans-serif' font-weight='bold' fill='white'>S</text></svg>" />
+
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Poppins for a friendly, modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS for theme and animations -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #E9EDF2; /* Slightly darker off-white */
+            overflow: hidden; /* Prevent scrollbars */
+        }
+
+        :root {
+            --ease-in-out-quint: ease-in-out;
+            --theme-duration: 500ms;
+            --interactive-duration: 200ms;
+        }
+
+        *, *::before, *::after {
+            transition: background-color var(--theme-duration) var(--ease-in-out-quint),
+                        border-color var(--theme-duration) var(--ease-in-out-quint),
+                        color var(--theme-duration) var(--ease-in-out-quint),
+                        fill var(--theme-duration) var(--ease-in-out-quint),
+                        stroke var(--theme-duration) var(--ease-in-out-quint),
+                        box-shadow var(--interactive-duration) var(--ease-in-out-quint),
+                        transform var(--interactive-duration) var(--ease-in-out-quint),
+                        opacity var(--theme-duration) var(--ease-in-out-quint);
+        }
+    </style>
+</head>
+<body>
+    <!-- Main content will be here -->
+</body>
+</html>

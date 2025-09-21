@@ -1,0 +1,24 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E9EDF2;
+    overflow: hidden;
+}
+
+:root {
+    --ease-in-out-quint: ease-in-out;
+    --theme-duration: 500ms;
+    --interactive-duration: 200ms;
+}
+
+*, *::before, *::after {
+    transition: background-color var(--theme-duration) var(--ease-in-out-quint),
+                border-color var(--theme-duration) var(--ease-in-out-quint),
+                color var(--theme-duration) var(--ease-in-out-quint),
+                fill var(--theme-duration) var(--ease-in-out-quint),
+                stroke var(--theme-duration) var(--ease-in-out-quint),
+                box-shadow var(--interactive-duration) var(--ease-in-out-quint),
+                transform var(--interactive-duration) var(--ease-in-out-quint),
+                opacity var(--theme-duration) var(--ease-in-out-quint);
+}
+
+/* Additional layout and component styles mostly Tailwind-based */
